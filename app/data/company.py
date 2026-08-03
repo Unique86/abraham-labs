@@ -3,9 +3,11 @@ COMPANY_NAME = "Abraham Labs"
 TAGLINE = "Engineering software that works for you"
 
 MISSION = (
-    "To build reliable software and intelligent automation that helps "
-    "people accomplish more with less effort while remaining accessible, "
-    "trustworthy, and user-focused."
+    "At Abraham Labs, we build practical software that solves real-world "
+    "problems through thoughtful engineering, intelligent automation, and "
+    "modern technology. We believe great software should be reliable, "
+    "scalable, and intuitive—helping people and businesses work smarter "
+    "with tools they can trust."
 )
 
 VISION = (

@@ -1,7 +1,7 @@
 print("home.py imported")
 from fastapi import APIRouter, Request
 from fastapi.templating import Jinja2Templates
-from app.data.company import COMPANY
+from app.data.company import COMPANY, MISSION
 from app.routes.products import products
 from app.data.services import services
 
@@ -16,4 +16,5 @@ def home(request: Request):
                                       request=request, 
                                       context={"company": COMPANY,
                                                "products": products,
-                                               "services": services}) 
+                                               "services": services,
+                                               "mission": MISSION}) 

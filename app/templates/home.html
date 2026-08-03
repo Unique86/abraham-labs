@@ -56,5 +56,73 @@
 
     </div>
  </section>
+ <section class="why-section">
+
+    <h2>Why We Build?</h2>
+   
+    <p class="mission">
+        {{ mission }}
+    </p>
+
+    <p class="why-intro">
+        Abraham Labs builds practical software that solves 
+        real-world problems through thoughtful
+        engineering, automation, and intelligent tools.
+    </p>
+
+    <div class="why-grid">
+
+        <div class="why-item">
+            <h3>⚡ Practical Solutions</h3>
+            <p>Every product is designed to solve real-world problems.</p>
+        </div>
+
+        <div class="why-item">
+            <h3>🚀 Modern Technologies</h3>
+            <p>Built with modern frameworks and cloud-ready architecture.</p>
+        </div>
+
+        <div class="why-item">
+            <h3>📈 Built to Scale</h3>
+            <p>Applications are designed to grow alongside businesses.</p>
+        </div>
+
+        <div class="why-item">
+            <h3>🤝 User-First Design</h3>
+            <p>Simple, intuitive software that puts users in control.</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="contact-section">
+
+    <h2>Let's Build Something Together</h2>
+
+    <p>
+        Whether you're looking for custom software, automation solutions,
+        or want to learn more about our products, we'd love to hear from you.
+    </p>
+
+    <div class="contact-info">
+
+        <p><strong>Email:</strong> {{ company.contact_email }}</p>
+
+        <p><strong>Location:</strong> United States</p>
+
+    </div>
+
+    <a href="mailto:{{ company.contact_email }}" class="btn">
+        Contact Us
+    </a>
+
+</section>
+<footer>
+
+    <p>
+        © 2026 Abraham Labs. All rights reserved.
+    </p>
+
+</footer>
 </main>
 {% endblock %}
