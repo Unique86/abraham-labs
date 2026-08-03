@@ -1,11 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Abraham Labs</title>
-</head>
-<body>
+{% extends "base.html" %}
 
-    <h1>Welcome to Abraham Labs</h1>
+{% block content %}
+<main class="container">
 
-</body>
-</html>
+<h1>{{ company.name }}</h1>
+
+<h2>{{ company.tagline }}</h2>
+
+<p>{{ company.about }}</p>
+<h2>Our Products</h2>
+
+<div class="products">
+
+    {% for product in products %}
+
+    <div class="product-card">
+
+        <div class="card-icon">
+            {{ product.icon }}
+        </div>
+
+        <h3>{{ product.name }}</h3>
+
+        <p>{{ product.description }}</p>
+
+        <span class="status">
+            {{ product.status }}
+        </span>
+
+    </div>
+
+    {% endfor %}
+
+</div>
+ <section class="services-section">
+    <h2>Our Services</h2>
+
+    <div class="services">
+
+        {% for service in services %}
+
+        <div class="service-card">
+
+            <div class="card-icon">
+                {{ service.icon }}
+            </div>
+
+            <h3>{{ service.title }}</h3>
+
+            <p>{{ service.description }}</p>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+ </section>
+</main>
+{% endblock %}
