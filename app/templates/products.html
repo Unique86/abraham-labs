@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<main class="container">
+
+    <section class="hero">
+
+        <h1>Our Products</h1>
+
+        <p>
+            Explore the software solutions developed by Abraham Labs.
+        </p>
+
+    </section>
+
+    <section class="products-section">
+
+        <div class="products">
+
+            {% for product in products %}
+
+            <div class="product-card">
+
+                <div class="product-icon">
+                    {{ product.icon }}
+                </div>
+
+                <h3>{{ product.name }}</h3>
+
+                <p>{{ product.description }}</p>
+
+                <span class="status">
+                    {{ product.status }}
+                </span>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+    </section>
+
+</main>
+
+{% endblock %}

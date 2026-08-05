@@ -8,11 +8,11 @@ router = APIRouter()
 templates = Jinja2Templates(directory="app/templates")
 
 
-@router.get("/about")
-def about(request: Request):
+@router.get("/products/cloud-file-automation")
+def cloud_file_automation(request: Request):
 
     return templates.TemplateResponse(
-        name="about.html",
+        name="cloud_file_automation.html",
         request=request,
         context={
             "company": COMPANY,

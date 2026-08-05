@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<main class="container">
+
+<section class="hero">
+
+<h1>About {{ company.name }}</h1>
+
+<p>
+
+{{ company.about }}
+
+</p>
+
+<h2>Our Mission</h2>
+
+<p>
+
+{{ company.mission }}
+
+</p>
+
+</section>
+
+</main>
+
+{% endblock %}
